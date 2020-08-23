@@ -5,13 +5,28 @@
         "https://secure-images.nike.com/is/image/DotCom/CT8532_104_A_PREM?$SNKRS_COVER_WD$&align=0,1"
     },
     "jordan-mars-270-london": {
-      "name": "JORDAN MARS 270 LONDON",
+      "name": "JORDAN MARS",
       "img":
         "https://secure-images.nike.com/is/image/DotCom/CV3042_001_A_PREM?$SNKRS_COVER_WD$&align=0,1"
     },
-    "air-jordan-1-zoom-racer-blue": {
+    "zoom-racer-blue": {
       "name": "RACER BLUE",
       "img":
         "https://secure-images.nike.com/is/image/DotCom/CK6637_104_A_PREM?$SNKRS_COVER_WD$&align=0,1"
+    },
+    "zoom-racer-yellow": {
+      "name": "RACER YELLOW",
+      "img":
+        "https://images.unsplash.com/photo-1582588678413-dbf45f4823e9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+    },
+    "valor-Red": {
+      "name": "VALOUR RED",
+      "img":
+        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+    },
+    "air-jordan-Herren": {
+      "name": "HERREN LAUFSCHUHE",
+      "img":
+        "https://cms.qz.com/wp-content/uploads/2018/01/nike_rn_react_product_blu_detail1_original-e1516971762656.jpg?quality=75&strip=all&w=1200&h=900&crop=1"
     }
   }

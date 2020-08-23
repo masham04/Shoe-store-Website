@@ -3,6 +3,7 @@ import Shoes from '../shoes.json'
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
+import {Link} from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -27,9 +28,11 @@ export const Product = () => {
          {Object.keys(Shoes).map(keyname => {
              const shoe = Shoes[keyname];
               return(<Grid item xs={12} md={4} sm={4} id='item'>
-              <Paper className={classes.paper} elevation={5} key={keyname}>
-                  <img src={shoe.img} height={400}></img>
+              <Paper className={classes.paper} elevation={5}>
+                <Link key={keyname} className='link' to={`/product/${keyname}`}>
+                  <img src={shoe.img} height={400} width={300}></img>
                   <h2>{shoe.name}</h2>
+                  </Link>
               </Paper>
 
             </Grid>)
