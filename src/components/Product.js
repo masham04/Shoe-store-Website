@@ -4,6 +4,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import {Link} from 'react-router-dom';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -18,6 +20,7 @@ const useStyles = makeStyles((theme) => ({
 
 export const Product = () => {
     const classes = useStyles();
+    AOS.init({duration: 1000});
 
     console.log(Object.values(Shoes));
 
@@ -27,12 +30,13 @@ export const Product = () => {
 
          {Object.keys(Shoes).map(keyname => {
              const shoe = Shoes[keyname];
-              return(<Grid item xs={12} md={4} sm={4} id='item'>
+              return(<Grid item xs={12} md={4} sm={4} id='item' data-aos="flip-left">
               <Paper className={classes.paper} elevation={5}>
                 <Link key={keyname} className='link' to={`/product/${keyname}`}>
-                  <img src={shoe.img} height={400} width={300}></img>
+                  <img src={shoe.img} height={400} width={300} alt='shoe'></img>
                   <h2>{shoe.name}</h2>
                   </Link>
+          
               </Paper>
 
             </Grid>)
